@@ -9,6 +9,8 @@ import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.homebantoo.MainViewModel
+import com.example.homebantoo.R
 import com.example.homebantoo.adapter.SearchListAdapter
 import com.example.homebantoo.api.ResultsItem
 import com.example.homebantoo.databinding.ActivityMainBinding
