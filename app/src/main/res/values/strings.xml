@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Homebantoo</string>
+    <string name="app_nav_title">Homebantoo</string>
+    <string name="search_recipe">search recipe</string>
+    <string name="recipe_photo">recipe photo</string>
+    <string name="recipe_name">recipe name</string>
 </resources>
