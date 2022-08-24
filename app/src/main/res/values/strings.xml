@@ -6,4 +6,8 @@
     <string name="judul_resep">Judul Resep</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="cara_pembuat">Cara Pembuat</string>
+    <string name="app_nav_title">Homebantoo</string>
+    <string name="search_recipe">search recipe</string>
+    <string name="recipe_photo">recipe photo</string>
+    <string name="recipe_name">recipe name</string>
 </resources>
