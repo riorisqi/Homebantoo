@@ -6,4 +6,6 @@
     <string name="judul_resep">Judul Resep</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="cara_pembuat">Cara Pembuat</string>
+    <string name="tambah_resep">Tambah resep</string>
+    <string name="stok_bahan_makanan">Stok bahan makanan</string>
 </resources>
