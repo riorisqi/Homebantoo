@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/BSI-Kompetensi/Homebantoo/app/src/main/res/layout/activity_detail.xml" value="0.264" />
         <entry key="..\:/BSI-Kompetensi/Homebantoo/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
         <entry key="..\:/BSI-Kompetensi/Homebantoo/app/src/main/res/menu/menu.xml" value="0.264" />
+=======
+        <entry key="..\:/Android Studio Projects/Homebantoo/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/Homebantoo/app/src/main/res/layout/item_row_recipe.xml" value="0.2" />
+>>>>>>> 70055e45127014f2a6e9b786b4db0d04643d4540
       </map>
     </option>
   </component>
