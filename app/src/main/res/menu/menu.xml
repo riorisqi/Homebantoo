@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/mapFragment"
+    <item android:id="@+id/add_recipe"
         android:title="@string/tambah_resep"
         app:showAsAction="always"
         android:icon="@drawable/ic_baseline_add"/>
 
-    <item android:id="@+id/farmlandFragment"
+    <item android:id="@+id/food_list"
         android:title="@string/stok_bahan_makanan"
         app:showAsAction="always"
         android:icon="@drawable/ic_baseline_list"/>
