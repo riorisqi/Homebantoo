@@ -2,6 +2,7 @@ package com.example.homebantoo.ui
 
 import android.app.SearchManager
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -16,10 +17,7 @@ import com.example.homebantoo.MainViewModel
 import com.example.homebantoo.R
 import com.example.homebantoo.adapter.SearchListAdapter
 import com.example.homebantoo.api.ResultsItem
-import com.example.homebantoo.databinding
-
-
-.ActivityMainBinding
+import com.example.homebantoo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -83,11 +81,29 @@ class MainActivity : AppCompatActivity() {
         binding.rvRecipe.adapter = searchListAdapter
         binding.rvRecipe.layoutManager = LinearLayoutManager(this)
 
-//        listUserAdapter.setOnItemClickCallback(object : ListUserAdapter.OnItemClickCallback {
-//            override fun onItemClicked(data: User) {
-//                moveToDetail(data)
-//            }
-//        })
+        searchListAdapter.setOnItemClickCallback(object : SearchListAdapter.OnItemClickCallback {
+            override fun onItemClicked(recipe: ResultsItem) {
+                moveToDetail(recipe)
+            }
+        })
+    }
+
+    private fun catchUsername(data: ResultsItem): ResultsItem? {
+        var select: ResultsItem? = null
+
+        for(recipe in list) {
+            if(recipe.key == data.key)
+                select = recipe
+        }
+
+        return select
+    }
+
+    private fun moveToDetail(user: ResultsItem){
+        val usernameCatch = catchUsername(user)
+        val intentToDetail = Intent(this@MainActivity, DetailActivity::class.java)
+        intentToDetail.putExtra(DetailActivity.DATA_KEY, usernameCatch?.key.toString())
+        startActivity(intentToDetail)
     }
 
     private fun showLoading(isLoading: Boolean) {
