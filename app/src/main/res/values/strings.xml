@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">Homebantoo</string>
+    <string name="image_default">image default</string>
+    <string name="detail_resep">Detail Resep</string>
+    <string name="food_image">food image</string>
+    <string name="judul_resep">Judul Resep</string>
+    <string name="bahan_bahan">Bahan-bahan</string>
+    <string name="cara_pembuat">Cara Pembuat</string>
     <string name="app_nav_title">Homebantoo</string>
     <string name="search_recipe">search recipe</string>
     <string name="recipe_photo">recipe photo</string>
     <string name="recipe_name">recipe name</string>
+    <string name="tambah_resep">Tambah resep</string>
+    <string name="stok_bahan_makanan">Stok bahan makanan</string>
 </resources>

@@ -1,17 +1,25 @@
-package com.example.homebantoo
+package com.example.homebantoo.ui
 
 import android.app.SearchManager
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.homebantoo.MainViewModel
+import com.example.homebantoo.R
 import com.example.homebantoo.adapter.SearchListAdapter
 import com.example.homebantoo.api.ResultsItem
-import com.example.homebantoo.databinding.ActivityMainBinding
+import com.example.homebantoo.databinding
+
+
+.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -89,4 +97,28 @@ class MainActivity : AppCompatActivity() {
             binding.progressBar.visibility = View.GONE
         }
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here.
+        val id = item.getItemId()
+
+        if (id == R.id.add_recipe) {
+            Toast.makeText(this, "Item One Clicked", Toast.LENGTH_LONG).show()
+            return true
+        }
+        if (id == R.id.food_list) {
+            Toast.makeText(this, "Item Two Clicked", Toast.LENGTH_LONG).show()
+            return true
+        }
+
+        return super.onOptionsItemSelected(item)
+
+    }
+
 }
