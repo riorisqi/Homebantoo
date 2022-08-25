@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="719dp"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="47dp">
+
+            <ImageView
+                android:id="@+id/img_event"
+                android:layout_width="292dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <Button
+                android:id="@+id/choose_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:backgroundTint="#D033F91D"
+                android:text="Choose Image"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="172dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/NamaBahan"
+            android:layout_width="138dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:hint="Nama Bahan"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="-6dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <EditText
+            android:id="@+id/etDeskripsiBahan"
+            android:layout_width="369dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:hint="Deskripsi Bahan"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UnknownId"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Stok"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="458dp" />
+
+        <EditText
+            android:id="@+id/etJumlahStok"
+            android:layout_width="138dp"
+            android:layout_height="52dp"
+            android:hint="Jumlah Stok"
+            android:textSize="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/bSimpan"
+            android:layout_width="360dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#D033F91D"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="661dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
