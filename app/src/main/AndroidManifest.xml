@@ -22,7 +22,7 @@
             android:name=".ui.AddRecipeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.detail"
+            android:name=".ui.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

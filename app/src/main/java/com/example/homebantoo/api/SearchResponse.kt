@@ -1,6 +1,8 @@
 package com.example.homebantoo.api
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 data class SearchResponse(
 
@@ -14,6 +16,7 @@ data class SearchResponse(
 	val status: Boolean
 )
 
+@Parcelize
 data class ResultsItem(
 
 	@field:SerializedName("difficulty")
@@ -33,4 +36,4 @@ data class ResultsItem(
 
 	@field:SerializedName("serving")
 	val serving: String
-)
+):Parcelable

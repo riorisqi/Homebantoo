@@ -10,51 +10,17 @@
         android:layout_height="wrap_content"
         tools:context=".ui.DetailDiseaseActivity">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/tbDetail"
-                android:layout_width="match_parent"
-                android:layout_height="?android:attr/actionBarSize"
-                android:background="@color/green"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-                <RelativeLayout
-                    android:id="@+id/rlContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp">
-
-                    <TextView
-                        android:id="@+id/tvTBTitle"
-                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/detail_resep"
-                        android:textColor="@color/white" />
-                </RelativeLayout>
-            </androidx.appcompat.widget.Toolbar>
-        </com.google.android.material.appbar.AppBarLayout>
-
         <ImageView
             android:id="@+id/ivFood"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            tools:src="@tools:sample/avatars"
-            android:scaleType="centerCrop"
             android:layout_margin="0dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/food_image"
+            android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/appBar"
-            android:contentDescription="@string/food_image" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
 
 
         <TextView
@@ -65,6 +31,17 @@
             app:layout_constraintTop_toBottomOf="@id/ivFood"
             app:layout_constraintStart_toStartOf="parent"
             android:text="@string/judul_resep"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/tvDescription"
@@ -96,7 +73,7 @@
             android:text="@string/bahan_bahan"/>
 
         <TextView
-            android:id="@+id/tvDescriptionDisease"
+            android:id="@+id/tvIngredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -112,7 +89,7 @@
             android:background="@color/line_divider"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tvDescriptionDisease"/>
+            app:layout_constraintTop_toBottomOf="@id/tvIngredients"/>
 
         <TextView
             android:id="@+id/tvTitleRecommendation"
@@ -124,7 +101,7 @@
             android:text="@string/cara_pembuat"/>
 
         <TextView
-            android:id="@+id/tvRecommendationCare"
+            android:id="@+id/tvDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -140,7 +117,7 @@
             android:background="@color/line_divider"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tvRecommendationCare"/>
+            app:layout_constraintTop_toBottomOf="@id/tvDesc"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
