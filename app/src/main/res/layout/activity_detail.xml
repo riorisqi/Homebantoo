@@ -73,7 +73,7 @@
             android:text="@string/bahan_bahan"/>
 
         <TextView
-            android:id="@+id/tvDescriptionDisease"
+            android:id="@+id/tvIngredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -89,7 +89,7 @@
             android:background="@color/line_divider"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tvDescriptionDisease"/>
+            app:layout_constraintTop_toBottomOf="@id/tvIngredients"/>
 
         <TextView
             android:id="@+id/tvTitleRecommendation"
@@ -101,7 +101,7 @@
             android:text="@string/cara_pembuat"/>
 
         <TextView
-            android:id="@+id/tvRecommendationCare"
+            android:id="@+id/tvDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -117,7 +117,7 @@
             android:background="@color/line_divider"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tvRecommendationCare"/>
+            app:layout_constraintTop_toBottomOf="@id/tvDesc"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

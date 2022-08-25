@@ -50,11 +50,17 @@ class DetailActivity : AppCompatActivity() {
                         dataDetail = responseBody
 
                         Log.e("HEHE", dataDetail.results?.title.toString())
+                        var arr: String? = null
 
                         binding.apply{
                             tvTitle.text = dataDetail.results?.title
-                            tvDescriptionDisease.text = dataDetail.results?.ingredient.toString()
-                            tvRecommendationCare.text = dataDetail.results?.step.toString()
+                            for (value in dataDetail.results?.ingredient!!){
+                                tvIngredients.append(value + "\n")
+                            }
+                            for (value in dataDetail.results?.step!!){
+                                tvDesc.append(value + "\n" + "\n")
+                            }
+                            Log.e("AOWKAOOAKWOAK", arr.toString())
                         }
                         Glide.with(this@DetailActivity)
                             .load(dataDetail.results?.thumb)
