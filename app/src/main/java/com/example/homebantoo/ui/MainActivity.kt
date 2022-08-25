@@ -2,6 +2,7 @@ package com.example.homebantoo.ui
 
 import android.app.SearchManager
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -109,7 +110,9 @@ class MainActivity : AppCompatActivity() {
         val id = item.getItemId()
 
         if (id == R.id.add_recipe) {
-            Toast.makeText(this, "Item One Clicked", Toast.LENGTH_LONG).show()
+            val intent = Intent(this@MainActivity, RecipeListActivity::class.java)
+            startActivity(intent)
+
             return true
         }
         if (id == R.id.food_list) {

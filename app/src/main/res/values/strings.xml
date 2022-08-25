@@ -12,4 +12,21 @@
     <string name="recipe_name">recipe name</string>
     <string name="tambah_resep">Tambah resep</string>
     <string name="stok_bahan_makanan">Stok bahan makanan</string>
+    <string name="title">Judul Resep</string>
+    <string name="description">Bahan yang diperlukan</string>
+    <string name="step">Langkah pembuatan</string>
+    <string name="submit">Submit</string>
+    <string name="delete">Hapus</string>
+    <string name="change">Ubah</string>
+    <string name="update">Perbarui</string>
+    <string name="add">Tambah</string>
+    <string name="save">Simpan</string>
+    <string name="empty">Kosong</string>
+    <string name="changed">Diubah</string>
+    <string name="cancel">Batal</string>
+    <string name="message_cancel">Apakah anda ingin membatalkan perubahan pada form?</string>
+    <string name="message_delete">Apakah anda yakin ingin menghapus item ini?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="deleted">Terhapus</string>
 </resources>
