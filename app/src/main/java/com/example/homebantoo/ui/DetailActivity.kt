@@ -6,9 +6,9 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.example.homebantoo.R
 import com.example.homebantoo.api.ApiConfig
 import com.example.homebantoo.api.DetailResponse
-import com.example.homebantoo.api.Results
 import com.example.homebantoo.databinding.ActivityDetailBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,6 +22,9 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.title = getString(R.string.detail_resep)
+        actionBar?.setDisplayHomeAsUpEnabled(true);
 
         val moveRecipe = intent.getStringExtra(DATA_KEY)
         moveRecipe.let {

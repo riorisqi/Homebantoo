@@ -18,7 +18,6 @@ import com.example.homebantoo.R
 import com.example.homebantoo.adapter.SearchListAdapter
 import com.example.homebantoo.api.ResultsItem
 import com.example.homebantoo.databinding.ActivityMainBinding
-import com.example.homebantoo.model.Recipe
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -71,42 +70,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
-
-//    private fun setRecipeData(items: List<ResultsItem>) {
-//        for (recipe in items) {
-//            val new = ResultsItem(recipe.difficulty, recipe.times, recipe.thumb,
-//                recipe.title, recipe.key, recipe.serving)
-//            list.add(new)
-//        }
-//        searchListAdapter = SearchListAdapter(list)
-//        binding.rvRecipe.adapter = searchListAdapter
-//        binding.rvRecipe.layoutManager = LinearLayoutManager(this)
-//
-//        searchListAdapter.setOnItemClickCallback(object : SearchListAdapter.OnItemClickCallback {
-//            override fun onItemClicked(data: ResultsItem) {
-//                moveToDetail(data)
-//            }
-//        })
-//    }
-//
-//    private fun catchKey(data: ResultsItem): ResultsItem? {
-//        var select: ResultsItem? = null
-//
-//        for (recipe in list){
-//            if (recipe.key == data.key){
-//                select = recipe
-//            }
-//        }
-//        return select
-//    }
-//
-//    private fun moveToDetail(recipe: ResultsItem){
-//        val key = catchKey(recipe)
-//
-//        val intentToDetail = Intent(this@MainActivity, DetailActivity::class.java)
-//        intentToDetail.putExtra(DetailActivity.DATA_KEY, key.toString())
-//        startActivity(intentToDetail)
-//    }
 
     private fun setRecipeData(items: List<ResultsItem>) {
         for (recipe in items) {
